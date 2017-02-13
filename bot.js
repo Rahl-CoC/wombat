@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexc69 = /!wm c69/;  botRegexa69 = /!wm a69/;
-      botRegex69a69 = /!wm 69a69
+      botRegex69a69 = /!wm 69a69/;
   
   if(request.text && botRegexa69.test(request.text)) {
     this.res.writeHead(200);
