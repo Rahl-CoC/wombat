@@ -1,22 +1,19 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;
-
       botRegexc69 = /!wm c69/;
   
-  if(request.text && botRegex.test(request.text)) {
+  if(request.text && botRegexa69.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(cool());
+    postMessage("No you didn't Ghost.");
     this.res.end();
   }
   else if(request.text && botRegexc69.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("working");
+    postMessage("Oi, stop fucking around and get out there and 3*.");
     this.res.end();
   }
   
