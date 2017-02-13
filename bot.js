@@ -5,6 +5,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexc69 = /!wm c69/;  botRegexa69 = /!wm a69/;
+      botRegex69a69 = /!wm 69a69
   
   if(request.text && botRegexa69.test(request.text)) {
     this.res.writeHead(200);
@@ -14,6 +15,11 @@ function respond() {
   else if(request.text && botRegexc69.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Oi, stop fucking around and get out there and 3*.");
+    this.res.end();
+  }
+  else if(request.text && botRegex69a69.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("69 on 69? Sixty-Ninception.");
     this.res.end();
   }
   
