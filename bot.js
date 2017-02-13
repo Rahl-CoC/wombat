@@ -9,7 +9,7 @@ function respond() {
   
   if(request.text && botRegexa69.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("No you didn't Ghost.");
+    postMessage("No you didn't.");
     this.res.end();
   }
   else if(request.text && botRegexc69.test(request.text)) {
